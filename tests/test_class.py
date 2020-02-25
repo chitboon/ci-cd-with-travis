@@ -1,5 +1,4 @@
 import unittest
-import pandas as pd
 from qa.app import app
 from qa.parsedata import convert_to_list
 
