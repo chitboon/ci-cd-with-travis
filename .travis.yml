@@ -2,6 +2,7 @@
 sudo: required
 language: python
 install:
+  - pip install ./qa
   - pip install -r requirements.txt
 # command to run tests
 script:
