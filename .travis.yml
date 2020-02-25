@@ -3,8 +3,6 @@ sudo: required
 language: python
 install:
   - pip install -r requirements.txt
-before_script:
-  - export PYTHONPATH=$PYTHONPATH:$(pwd)
 # command to run tests
 script:
   # unit test
