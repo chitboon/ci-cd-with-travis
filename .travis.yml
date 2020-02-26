@@ -12,5 +12,14 @@ deploy:
   - provider: heroku
     api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
     app: itp112
+  - provider: lambda
+    function_name: askme-now
+    region: "us-east-1"
+    role: "arn:aws:iam::871485877504:role/service-role/askme-now-role-1o4tgp8g"
+    runtime: "python3.8"
+    handler_name: "lambda_handler"
+    access_key_id: "ASIA4V2E3FUAKPIAI7V6"
+    secret_access_key: "Rxc1v8iYEY2K+joqLslnbo21LVOgNJTfBzCDDJPx"
+
 #after_success:
 #  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
