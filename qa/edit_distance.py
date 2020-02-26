@@ -1,7 +1,8 @@
-#import pandas as pd
+# import pandas as pd
 from qa.parsedata import generate_pairs
 from nltk.metrics import edit_distance
-#import argparse
+# import argparse
+
 
 def edit_dis(question):
     """Retrieves the similar question in the test data with a users question"""

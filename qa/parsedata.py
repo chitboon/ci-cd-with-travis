@@ -1,5 +1,5 @@
 import pandas as pd
-#from pathlib import Path
+# from pathlib import Path
 
 
 def readData(txt):
@@ -18,9 +18,9 @@ def generate_pairs():
     questions = readData("qa/dataset/Questions.txt")
     answers = readData("qa/dataset/Answers.txt")
     # create large data frame
-    df["Topic"]=topics.apply(lambda x: str(x).lower())
-    df["Question"]=questions.apply(lambda x: str(x).lower())
-    df["Answer"]=answers.apply(lambda x: str(x).lower())
+    df["Topic"] = topics.apply(lambda x: str(x).lower())
+    df["Question"] = questions.apply(lambda x: str(x).lower())
+    df["Answer"] = answers.apply(lambda x: str(x).lower())
     return df
 
 
