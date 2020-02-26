@@ -1,11 +1,11 @@
 import pandas as pd
-from pathlib import Path
+#from pathlib import Path
+
 
 def readData(txt):
     # read txt and normalize
     data = pd.read_csv(txt, delimiter="\n", header=None)
     data[0] = data[0].apply(lambda x: str(x).lower())
-
     return data[0]
 
 
@@ -21,8 +21,8 @@ def generate_pairs():
     df["Topic"]=topics.apply(lambda x: str(x).lower())
     df["Question"]=questions.apply(lambda x: str(x).lower())
     df["Answer"]=answers.apply(lambda x: str(x).lower())
-
     return df
+
 
 def convert_to_list(txt):
     """takes a text file and returns a list"""
