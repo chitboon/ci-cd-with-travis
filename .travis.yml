@@ -13,8 +13,8 @@ deploy:
 #    api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
 #    app: itp112
 #  - provider: lambda
-#    access_key_id: ASIA4V2E3FUAKPIAI7V6
-#    secret_access_key: Rxc1v8iYEY2K+joqLslnbo21LVOgNJTfBzCDDJPx
+#    access_key_id:
+#    secret_access_key:
 #    function_name: askme-now
 #    region: "us-east-1"
 #    role: "arn:aws:iam::871485877504:role/service-role/askme-now-role-1o4tgp8g"
@@ -23,8 +23,10 @@ deploy:
 #    access_key_id: "ASIA4V2E3FUAKPIAI7V6"
 #    secret_access_key: "Rxc1v8iYEY2K+joqLslnbo21LVOgNJTfBzCDDJPx"
   -  provider: elasticbeanstalk
-     access_key_id: ASIA4V2E3FUAKPIAI7V6
-     secret_access_key: Rxc1v8iYEY2K+joqLslnbo21LVOgNJTfBzCDDJPx
+     access_key_id:
+      secure: "SNcSNMB5v4Istrhq1cw0NTyGjuPObFG+77qr1eza9DpPm7LnmudTNBlmyKozRlA0Q5647me2masokdA/EZvQHdShtUwBIklg7ghBHb+Ile9EL1KdPZyhV6zsDAiObkXRDm9J1kAPBSN8orV/ckmi60hKrT6W+4tKlH1f4JoQxzMWVFtBC/QSPtsZi9TtHPtuFtLymS/T5C7cIWqZwmqasrpozwfrlE7YYeGn9Joiu6evVm9np3o8lBGs0/TIE+2jYnr7BAWEMsN5hd8WUi8YJM5hi59679eErPwNCXvOhTdnlbLIPEpn/J1c2MKWOws8QpF1G7keEw0Ropm6Ik6ftkkjU81afe8q9T2LDRr+xSXMfbVZnv054wozi14yvRB0DpAKIDoGcq/w10r5cPebsIRhLRzEoN+Pn7WR/aXnQdOGG1pb88y6q7tVPmLwOo7O5b6VWoDAqeq/Gj8DTm8WiGdzxPDzcq+Z3k7QwzAQqABT8nALGS7V7l59cXj7z7j/HFwAh3U8rqAzE7ygcAxZxkVRrKwGgBqxXKMvJcEWbwfbed6td1ga3DnbTTMKU8iVr/gi6fQTttm3sBKDuVtA2CXiyxhOjQGmgJ3hqHe3B598BfGPk9vUeVBGwy0pHwfZVJQ+ijlcQcc5QqJoW0yKJ1zASA6MGWrMtFyesdYwSIs="
+     secret_access_key:
+      secure: "A64URVb86GtvkiR3kXObh2cSJVhZADFVsqOnGMeb3F0ZBlX7gaRStRANWUhKzfmONUDNBjH+NhKnYKLqurK/+JhL+HUpC/K5tlzsoEyoXsJUNhiJueNR9fMXgoTSDpuHdP+DLgPzk6gGQ0R78eySeC5/4Mv9xw/0BYwQmDJiUAu6zK2xGsQQ5bhYxrNVUJ8Z/J9sTeA13EhdEPYEnn5hCVOnGFP0DSF1z7LvV75cL7OXU1J2uiYbvX5skxs9Hj/x2U8NdxctVyh/4Fe+KGttDEsz3WutXCySoctzm+keT6qP6quAlfj6+1h8vQ718Imuaov+VoAhKcPxNVZu9/W7TNdSa5sbPDC3lJSiDysFuvKxNYSkqOfwwnWxc+2TyZXzFDYKgIGAxk6r7Ggm6nWr2BVg11roxlu/fzLHSTXyLfQtqTeXS00SdONWi94kIqDznO4fyrupiSGEEbMSDtJqadj9+esjPDmiuVb0KHYcQBZUdXMjdyWOPXkBuaGSCDfxy5HuUdEGyyDe2GmurH6gnEd52/UvgVgVEUit0IL56y5NOSJ197aYfQr8nym5UeErVvpwlI0xG/BmiKbEpm/oSL3E0ljhUGr8WErmVjeUVcXRilX2hG3PPcJrMpiiqOQhUXcRW3wbhfeoOre4OLk46ObUlvcU9jKGhWNwoZVPjLU="
      region: us-east-1
      app: askme-now
      env: askme-now-env
