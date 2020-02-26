@@ -9,5 +9,9 @@ script:
   - python -m pytest -v
   # linting test
   # - flake8
-after_success:
-  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
+deploy:
+  - provider: heroku
+    api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
+    app: itp112
+#after_success:
+#  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
