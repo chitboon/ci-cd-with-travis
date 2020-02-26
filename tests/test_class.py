@@ -17,5 +17,3 @@ class TestAskMe(unittest.TestCase):
 
     def test_num_docs(self):
         self.assertEqual(len(convert_to_list("qa/dataset/Answers.txt")), 2609)
-
-
