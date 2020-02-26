@@ -9,9 +9,9 @@ script:
   # linting test
   # - flake8
 deploy:
-  - provider: heroku
-    api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
-    app: itp112
+#  - provider: heroku
+#    api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
+#    app: itp112
   - provider: lambda
      access_key_id:
        secure: "GX/FmfztMd8Cgm/G4/GMnS4Z2S5H5OxbXh5zBOoHm137lZefmUQS2diZYPrL1BWb/S1TqNc47KouieibEFVe4pDIU8YvnPiYMIK2p6Zwh6YyUq2IVbcMAspNtzayNtcWNUTBdxE4WWC2H4KJ8SILo3/iUlnCPzT/MMbjW6ewGdi9BK3bit14wdIANRglpx1fvnThJpVBzIxiUFsyN0mGewF08fw4UbWsPNd5SGorTCTHQrKbIKMXUeVhkDLvYDiCOBDRsBQ1tbO64UWvPVdQr6d8OK3jygVkrS9ZPPfYX2MAAtYfsnZ+K28Jhvtl6ei5xFiBezV7IBc9PPvbrRET8nTbQ7zCKXwenNRgt8ltxCfF1RZTlwMKTJiG4bHQkZ38mufuDIKZ9r3KX7OtjzuNHe04vuIXCOH294xmhEVO5T07FPhhwZ+FeHhhMWvtxyIJaXLzQVYGvwt1qGAzusGFzbvnuNZI6aip3+zf2ahH0v8iPJk/wBsSjuV1b0umVWudXa4acKwq7NYkRTJwijodmuwTTESd9aaAYzeITIjPX/uyYxifIHSh5tyYXN/l5xboltskS4IUzzlwI8q/ITvPRLHjClphuJKkqgqhpa4xmjAfZwViI25kIb+1n8+VahGGFfsj6dWCvXfCKYzDD6RPgNcWyZK+sJk18VjlXz80I+8="
