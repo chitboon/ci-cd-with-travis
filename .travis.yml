@@ -31,6 +31,9 @@ deploy:
      env: AskmeNow-env
 #     env: e-kchs4kyu2i
      bucket_name: askmenowbucket
+  -  provider: gae
+     keyfile: x5-gentle-oxygen-h-45e32c80575c.json.enc
+     project: x5-gentle-oxygen-h
 
 
 #after_success:
