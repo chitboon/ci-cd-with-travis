@@ -6,34 +6,9 @@ script:
   # unit test
   - python -m pytest -v
   # linting test
-  - flake8
+  # - flake8
 deploy:
   - provider: heroku
     api_key: c88ee5eb-f3f0-42a3-ab60-29fd967f7576
     app: itp112
-#  - provider: lambda
-#    access_key_id:
-#       secure: "GX/FmfztMd8Cgm/G4/GMnS4Z2S5H5OxbXh5zBOoHm137lZefmUQS2diZYPrL1BWb/S1TqNc47KouieibEFVe4pDIU8YvnPiYMIK2p6Zwh6YyUq2IVbcMAspNtzayNtcWNUTBdxE4WWC2H4KJ8SILo3/iUlnCPzT/MMbjW6ewGdi9BK3bit14wdIANRglpx1fvnThJpVBzIxiUFsyN0mGewF08fw4UbWsPNd5SGorTCTHQrKbIKMXUeVhkDLvYDiCOBDRsBQ1tbO64UWvPVdQr6d8OK3jygVkrS9ZPPfYX2MAAtYfsnZ+K28Jhvtl6ei5xFiBezV7IBc9PPvbrRET8nTbQ7zCKXwenNRgt8ltxCfF1RZTlwMKTJiG4bHQkZ38mufuDIKZ9r3KX7OtjzuNHe04vuIXCOH294xmhEVO5T07FPhhwZ+FeHhhMWvtxyIJaXLzQVYGvwt1qGAzusGFzbvnuNZI6aip3+zf2ahH0v8iPJk/wBsSjuV1b0umVWudXa4acKwq7NYkRTJwijodmuwTTESd9aaAYzeITIjPX/uyYxifIHSh5tyYXN/l5xboltskS4IUzzlwI8q/ITvPRLHjClphuJKkqgqhpa4xmjAfZwViI25kIb+1n8+VahGGFfsj6dWCvXfCKYzDD6RPgNcWyZK+sJk18VjlXz80I+8="
-#    secret_access_key:
-#       secure: "Oe19JVjWeXE+hXOd8JvISdyBll3BdGu+dfNx/FhiOM+g/nwbjFjjk/8aSWqr2LFRE/Qq+TntSiSfYI6Oh30WVc4YpxHI+UfFIm/GaMo0zps1w7nsizVOASGj9nktN40Zve0h43r5ec6bLfYvNobDEAPVyAeCqynyHFrnJNDIVmiT7olBUHvhHc3vuS4V+6tnF7FMPdhOJsYDsND/BkVHgu6uAkRAmIdAqusGyJRNCNzLZGJ03Thz1kZeMdKAaf9H+uqMPV7c3p4orHUUCb2ZMOKap4pG9oK/Hpj8cHd38mZfeDFb4/hx8P+dTC2SmMUUqb3gq/+MAOU7iH83YpojK0j5+7MmKhzGW10w6t5Q2IqciiVAWZrztWPF5H+v+JRXFGtk/X10ielJZgKCCYvjmjCoc6t2q+oEWrl/nQdsI/nzeWAVBF3MMr6SztdG0WAAbR9jR6tmI9lHovty7AFiSHrNn/U6JPXm8w583p9Pr+uOuOckWtSg5nPmkehB0qYBXskNf7/crf1+1E0Q4MTcxD7jQcoWb4R+vGNamX2QHHm+BzgXVdoxvBMhbYGWjMpUpbfYiYpqyVV1uD61LvL/3QY8hPllNDOY73OLoEOqan2W7xQUEvNrCEiianW0x9HVYbw7gTh88Kkz9awRn59KPCbPpPnIZf3Md+gXkcdJ0MU="
-#    function_name: askme-now
-#    region: "us-east-1"
-#    role: "arn:aws:iam::973396569177:role/service-role/askme-now-role-qy9t841j"
-#    runtime: "python3.8"
-#    handler_name: "lambda_handler"
-#  -  provider: elasticbeanstalk
-#     access_key_id:
-#       secure: "GX/FmfztMd8Cgm/G4/GMnS4Z2S5H5OxbXh5zBOoHm137lZefmUQS2diZYPrL1BWb/S1TqNc47KouieibEFVe4pDIU8YvnPiYMIK2p6Zwh6YyUq2IVbcMAspNtzayNtcWNUTBdxE4WWC2H4KJ8SILo3/iUlnCPzT/MMbjW6ewGdi9BK3bit14wdIANRglpx1fvnThJpVBzIxiUFsyN0mGewF08fw4UbWsPNd5SGorTCTHQrKbIKMXUeVhkDLvYDiCOBDRsBQ1tbO64UWvPVdQr6d8OK3jygVkrS9ZPPfYX2MAAtYfsnZ+K28Jhvtl6ei5xFiBezV7IBc9PPvbrRET8nTbQ7zCKXwenNRgt8ltxCfF1RZTlwMKTJiG4bHQkZ38mufuDIKZ9r3KX7OtjzuNHe04vuIXCOH294xmhEVO5T07FPhhwZ+FeHhhMWvtxyIJaXLzQVYGvwt1qGAzusGFzbvnuNZI6aip3+zf2ahH0v8iPJk/wBsSjuV1b0umVWudXa4acKwq7NYkRTJwijodmuwTTESd9aaAYzeITIjPX/uyYxifIHSh5tyYXN/l5xboltskS4IUzzlwI8q/ITvPRLHjClphuJKkqgqhpa4xmjAfZwViI25kIb+1n8+VahGGFfsj6dWCvXfCKYzDD6RPgNcWyZK+sJk18VjlXz80I+8="
-#     secret_access_key:
-#       secure: "Oe19JVjWeXE+hXOd8JvISdyBll3BdGu+dfNx/FhiOM+g/nwbjFjjk/8aSWqr2LFRE/Qq+TntSiSfYI6Oh30WVc4YpxHI+UfFIm/GaMo0zps1w7nsizVOASGj9nktN40Zve0h43r5ec6bLfYvNobDEAPVyAeCqynyHFrnJNDIVmiT7olBUHvhHc3vuS4V+6tnF7FMPdhOJsYDsND/BkVHgu6uAkRAmIdAqusGyJRNCNzLZGJ03Thz1kZeMdKAaf9H+uqMPV7c3p4orHUUCb2ZMOKap4pG9oK/Hpj8cHd38mZfeDFb4/hx8P+dTC2SmMUUqb3gq/+MAOU7iH83YpojK0j5+7MmKhzGW10w6t5Q2IqciiVAWZrztWPF5H+v+JRXFGtk/X10ielJZgKCCYvjmjCoc6t2q+oEWrl/nQdsI/nzeWAVBF3MMr6SztdG0WAAbR9jR6tmI9lHovty7AFiSHrNn/U6JPXm8w583p9Pr+uOuOckWtSg5nPmkehB0qYBXskNf7/crf1+1E0Q4MTcxD7jQcoWb4R+vGNamX2QHHm+BzgXVdoxvBMhbYGWjMpUpbfYiYpqyVV1uD61LvL/3QY8hPllNDOY73OLoEOqan2W7xQUEvNrCEiianW0x9HVYbw7gTh88Kkz9awRn59KPCbPpPnIZf3Md+gXkcdJ0MU="
-#     region: us-east-1
-#     app: askme-now
-#     env: AskmeNow-env
-#     bucket_name: askmenowbucket
-#  -  provider: gae
-#     keyfile: x5-gentle-oxygen-h-45e32c80575c.json.enc
-#     project: x5-gentle-oxygen-h
 
-
-#after_success:
-#  - test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
